@@ -2,6 +2,10 @@
 
 English | [简体中文](README.zh-CN.md)
 
+[![Visual Studio Marketplace Version](https://img.shields.io/visual-studio-marketplace/v/youngdubbydu.codex-multifile-drop?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=youngdubbydu.codex-multifile-drop)
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/youngdubbydu.codex-multifile-drop?label=Installs)](https://marketplace.visualstudio.com/items?itemName=youngdubbydu.codex-multifile-drop)
+[![GitHub Stars](https://img.shields.io/github/stars/YoungDubbyDu/codex-multifile-drop?style=flat&label=Stars)](https://github.com/YoungDubbyDu/codex-multifile-drop)
+
 <p align="center">
   <img src="assets/icon.png" alt="Codex File Drop icon" width="160">
 </p>
@@ -41,7 +45,12 @@ Explorer file or folder selection
 
 ## Install from Marketplace
 
-Search for `Codex File Drop` in the Extensions view and select **Install**.
+[Install Codex File Drop from the Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=youngdubbydu.codex-multifile-drop),
+or search for `Codex File Drop` in the Extensions view and select **Install**.
+
+```bash
+code --install-extension youngdubbydu.codex-multifile-drop
+```
 
 ## Install from VSIX
 

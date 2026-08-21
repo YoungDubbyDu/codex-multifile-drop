@@ -2,6 +2,10 @@
 
 [English](README.md) | 简体中文
 
+[![Visual Studio Marketplace 版本](https://img.shields.io/visual-studio-marketplace/v/youngdubbydu.codex-multifile-drop?label=Marketplace)](https://marketplace.visualstudio.com/items?itemName=youngdubbydu.codex-multifile-drop)
+[![Visual Studio Marketplace 安装量](https://img.shields.io/visual-studio-marketplace/i/youngdubbydu.codex-multifile-drop?label=Installs)](https://marketplace.visualstudio.com/items?itemName=youngdubbydu.codex-multifile-drop)
+[![GitHub Stars](https://img.shields.io/github/stars/YoungDubbyDu/codex-multifile-drop?style=flat&label=Stars)](https://github.com/YoungDubbyDu/codex-multifile-drop)
+
 <p align="center">
   <img src="assets/icon.png" alt="Codex File Drop 图标" width="160">
 </p>
@@ -40,7 +44,12 @@ Explorer 多选文件或文件夹
 
 ## 从扩展市场安装
 
-在扩展面板搜索 `Codex File Drop`，点击**安装**。
+[点击进入 Visual Studio Marketplace 安装 Codex File Drop](https://marketplace.visualstudio.com/items?itemName=youngdubbydu.codex-multifile-drop)，
+也可以在扩展面板搜索 `Codex File Drop`，点击**安装**。
+
+```bash
+code --install-extension youngdubbydu.codex-multifile-drop
+```
 
 ## 通过 VSIX 安装
 

@@ -16,14 +16,22 @@ Inspect the generated VSIX before publishing:
 npx vsce ls --no-dependencies
 ```
 
-## First Marketplace release
+## Marketplace
 
-1. Sign in at the Visual Studio Marketplace publisher management page.
-2. Create the publisher ID `youngdubbydu`. Publisher IDs cannot be renamed.
-3. Select **New extension** and **Visual Studio Code**.
-4. Upload `codex-multifile-drop-0.2.2.vsix`.
-5. Confirm that the public listing shows the display name `Codex File Drop`,
-   publisher `youngdubbydu`, icon, README, repository, and MIT license.
+The extension is published at:
+
+https://marketplace.visualstudio.com/items?itemName=youngdubbydu.codex-multifile-drop
+
+For a new release:
+
+1. Update the version in `package.json` and add the release notes to
+   `CHANGELOG.md`.
+2. Run `npm install` and `npm run package`.
+3. Inspect the generated VSIX with `npx vsce ls --no-dependencies`.
+4. Sign in to the Visual Studio Marketplace publisher management page.
+5. Open **Codex File Drop**, select **Update**, and upload the new VSIX.
+6. Confirm that the public listing shows the new version before creating the
+   matching GitHub release.
 
 Manual upload keeps Marketplace credentials out of the repository and local
 shell history. Future releases can use `npm run publish` after configuring the
