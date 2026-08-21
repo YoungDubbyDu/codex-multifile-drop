@@ -1,9 +1,13 @@
-# Multi-file Drop for Codex
+# Codex File Drop
 
 [English](README.md) | 简体中文
 
-将 VS Code 或 Cursor Explorer 中的多份文件、多个文件夹批量加入当前 Codex
-对话。
+<p align="center">
+  <img src="assets/icon.png" alt="Codex File Drop 图标" width="160">
+</p>
+
+将 VS Code 或 Cursor Explorer 中的多份文件、多个文件夹拖放或批量加入当前
+Codex 对话，也支持 Remote-SSH。
 
 ## 为什么需要这个扩展
 
@@ -34,14 +38,19 @@ Explorer 多选文件或文件夹
 - VS Code 兼容编辑器 `1.100.0` 或更高版本
 - 已安装并启用 Codex 扩展（`openai.chatgpt`）
 
-## 安装
+## 从扩展市场安装
 
-1. 从最新 GitHub Release 下载 `codex-multifile-drop-0.2.1.vsix`。
+在扩展面板搜索 `Codex File Drop`，点击**安装**。
+
+## 通过 VSIX 安装
+
+1. 从 [GitHub 最新版本](https://github.com/YoungDubbyDu/codex-multifile-drop/releases/latest)
+   下载 VSIX。
 2. 在 VS Code 或 Cursor 的 Explorer 中右键 VSIX，选择
    `Install Extension VSIX`；也可以在终端执行：
 
    ```bash
-   code --install-extension codex-multifile-drop-0.2.1.vsix --force
+   code --install-extension codex-multifile-drop-*.vsix --force
    ```
 
 3. 执行 `Developer: Reload Window`。

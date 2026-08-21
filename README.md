@@ -1,9 +1,13 @@
-# Multi-file Drop for Codex
+# Codex File Drop
 
 English | [简体中文](README.zh-CN.md)
 
-Send multiple files or folders from the VS Code or Cursor Explorer to the
-current Codex thread in one operation.
+<p align="center">
+  <img src="assets/icon.png" alt="Codex File Drop icon" width="160">
+</p>
+
+Drag or batch-add multiple files and folders from the VS Code or Cursor Explorer
+to the current Codex thread, including over Remote-SSH.
 
 ## Why this extension exists
 
@@ -35,14 +39,19 @@ Explorer file or folder selection
 - VS Code-compatible editor version `1.100.0` or newer
 - Codex extension enabled (`openai.chatgpt`)
 
-## Install
+## Install from Marketplace
 
-1. Download `codex-multifile-drop-0.2.1.vsix` from the latest GitHub Release.
+Search for `Codex File Drop` in the Extensions view and select **Install**.
+
+## Install from VSIX
+
+1. Download the VSIX from the
+   [latest GitHub Release](https://github.com/YoungDubbyDu/codex-multifile-drop/releases/latest).
 2. In VS Code or Cursor, right-click the VSIX and choose
    `Install Extension VSIX`, or run:
 
    ```bash
-   code --install-extension codex-multifile-drop-0.2.1.vsix --force
+   code --install-extension codex-multifile-drop-*.vsix --force
    ```
 
 3. Run `Developer: Reload Window`.

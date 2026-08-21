@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.2 - 2026-08-21
+
+- Renamed the Marketplace display name to Codex File Drop for easier discovery.
+- Added a dedicated Marketplace icon and searchable metadata.
+- Added the standard VS Code Marketplace packaging workflow.
+
 ## 0.2.1 - 2026-08-21
 
 - Added complete English and Simplified Chinese documentation.

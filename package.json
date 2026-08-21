@@ -1,8 +1,8 @@
 {
   "name": "codex-multifile-drop",
-  "displayName": "Multi-file Drop for Codex",
-  "description": "Reliably send multiple Explorer files to the official Codex VS Code extension, including in Remote-SSH and Cursor.",
-  "version": "0.2.1",
+  "displayName": "Codex File Drop",
+  "description": "Drag or batch-add files and folders from VS Code or Cursor Explorer to the current Codex thread, including over Remote-SSH.",
+  "version": "0.2.2",
   "publisher": "youngdubbydu",
   "license": "MIT",
   "pricing": "Free",
@@ -14,13 +14,24 @@
   "bugs": {
     "url": "https://github.com/YoungDubbyDu/codex-multifile-drop/issues"
   },
+  "icon": "assets/icon.png",
+  "galleryBanner": {
+    "color": "#06152f",
+    "theme": "dark"
+  },
   "keywords": [
     "codex",
     "openai",
+    "vscode",
+    "cursor",
+    "file",
+    "folder",
+    "explorer",
     "drag-and-drop",
     "multi-file",
     "remote-ssh",
-    "cursor"
+    "attachment",
+    "context"
   ],
   "engines": {
     "vscode": "^1.100.0"
@@ -31,6 +42,19 @@
   "extensionKind": [
     "workspace"
   ],
+  "extensionDependencies": [
+    "openai.chatgpt"
+  ],
+  "scripts": {
+    "package": "vsce package --no-dependencies",
+    "publish": "vsce publish --no-dependencies"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "2.26.1"
+  },
+  "overrides": {
+    "cheerio": "1.0.0-rc.12"
+  },
   "activationEvents": [
     "onView:codexMultiFileDrop.dropZone",
     "onCommand:codexMultiFileDrop.addSelectedFiles",

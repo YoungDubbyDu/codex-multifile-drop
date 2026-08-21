@@ -1,0 +1,8 @@
+.git/**
+.github/**
+.gitignore
+.vscodeignore
+codex-multifile-drop-*.vsix
+extension.vsixmanifest
+[[]Content_Types].xml
+PUBLISHING.md
