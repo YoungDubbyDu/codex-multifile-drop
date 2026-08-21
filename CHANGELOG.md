@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.2.1 - 2026-08-21
+
+- Added complete English and Simplified Chinese documentation.
+- Documented batch context-menu actions and folder handoff behavior.
+- Simplified public-facing product description and display name.
+
 ## 0.2.0 - 2026-08-20
 
 - Added Cursor-compatible MIME and JSON URI parsing.

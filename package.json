@@ -1,8 +1,8 @@
 {
   "name": "codex-multifile-drop",
-  "displayName": "Multi-file Drop for Codex (Unofficial)",
+  "displayName": "Multi-file Drop for Codex",
   "description": "Reliably send multiple Explorer files to the official Codex VS Code extension, including in Remote-SSH and Cursor.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "youngdubbydu",
   "license": "MIT",
   "pricing": "Free",

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
   <Metadata>
-    <Identity Language="en-US" Id="codex-multifile-drop" Version="0.2.0" Publisher="youngdubbydu" />
-    <DisplayName>Multi-file Drop for Codex (Unofficial)</DisplayName>
+    <Identity Language="en-US" Id="codex-multifile-drop" Version="0.2.1" Publisher="youngdubbydu" />
+    <DisplayName>Multi-file Drop for Codex</DisplayName>
     <Description xml:space="preserve">Native Explorer drop zone and multi-select attachment command for the Codex IDE extension.</Description>
     <Properties>
       <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.100.0" />
