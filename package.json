@@ -1,0 +1,74 @@
+{
+  "name": "codex-multifile-drop",
+  "displayName": "Multi-file Drop for Codex (Unofficial)",
+  "description": "Reliably send multiple Explorer files to the official Codex VS Code extension, including in Remote-SSH and Cursor.",
+  "version": "0.2.0",
+  "publisher": "youngdubbydu",
+  "license": "MIT",
+  "pricing": "Free",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YoungDubbyDu/codex-multifile-drop.git"
+  },
+  "homepage": "https://github.com/YoungDubbyDu/codex-multifile-drop#readme",
+  "bugs": {
+    "url": "https://github.com/YoungDubbyDu/codex-multifile-drop/issues"
+  },
+  "keywords": [
+    "codex",
+    "openai",
+    "drag-and-drop",
+    "multi-file",
+    "remote-ssh",
+    "cursor"
+  ],
+  "engines": {
+    "vscode": "^1.100.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "extensionKind": [
+    "workspace"
+  ],
+  "activationEvents": [
+    "onView:codexMultiFileDrop.dropZone",
+    "onCommand:codexMultiFileDrop.addSelectedFiles",
+    "onCommand:codexMultiFileDrop.pickFiles"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "codexMultiFileDrop.addSelectedFiles",
+        "title": "Codex: Add ALL Selected Files to Current Thread",
+        "category": "Codex",
+        "icon": "$(comment-discussion)"
+      },
+      {
+        "command": "codexMultiFileDrop.pickFiles",
+        "title": "Codex: Pick Multiple Files for Current Thread",
+        "category": "Codex",
+        "icon": "$(files)"
+      }
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "codexMultiFileDrop.addSelectedFiles",
+          "when": "resourceScheme == file || resourceScheme == vscode-remote",
+          "group": "2_workspace@100"
+        }
+      ]
+    },
+    "views": {
+      "explorer": [
+        {
+          "id": "codexMultiFileDrop.dropZone",
+          "name": "CODEX: DROP FILES HERE",
+          "when": "workspaceFolderCount != 0"
+        }
+      ]
+    }
+  }
+}
